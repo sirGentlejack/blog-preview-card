@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: myFirstFont;
+        src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+        font-weight: 600;
+      }
+      body {
+        background: hsl(47, 88%, 63%);
+        color: hsl(0, 0%, 7%);
+      }
+      .card {
+        margin: 100px auto;
+        border: 1px solid hsl(0, 0%, 7%);
+        width: 330px;
+        border-radius: 25px;
+        padding: 20px;
+        box-shadow: 6px 6px 1px hsl(0, 0%, 7%);
+        margin-bottom: 10px;
+        background: hsl(0, 0%, 100%);
+      }
+      .art-work {
+        width: 100%;
+        border-radius: 15px;
+      }
+      .learning-btn {
+        background: hsl(47, 88%, 63%);
+        border: 2px solid transparent;
+        padding: 5px 8px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-family: myFirstFont;
+        color: hsl(0, 0%, 7%);
+        cursor: pointer;
+        transition: 2s;
+      }
+      .learning-btn:hover{
+        border: 2px solid hsl(0, 0%, 7%);
+      }
+      .learning-btn:focus{
+        color: hsl(0, 0%, 100%);
+      }
+      .date{
+        font-family: myFirstFont;
+      }
+      .heading {
+        font-size: 21px;
+        font-family: myFirstFont;
+      }
+      .content{
+       color: hsl(0, 0%, 50%);
+       font-family: myFirstFont;
+
+      }
+      .user-section{
+        display: flex;
+        gap: 17px;
+        align-items: center;
+      }
+      .user-img{
+        width: 35px;
+        height: 35px;
+      }
+      .user-name{
+        font-family: myFirstFont;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="art work"
+        class="art-work"
+      />
+      <button class="learning-btn"><b>Learning</b></button>
+      <p class="date">Published 21 Dec 2023</p>
+      <h1 class="heading">HTML & CSS foundations</h1>
+      <p class="content">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="user-section">
+        <img src="./assets/images/image-avatar.webp" alt="user" class="user-img" />
+        <h5 class="user-name">Greg Hooper</h5>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/sirGentlejack">GentlejackB</a>.
+    </div>
+  </body>
+</html>
